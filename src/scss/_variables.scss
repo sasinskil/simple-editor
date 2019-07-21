@@ -2,7 +2,7 @@ $lightcyan: lightcyan;
 $lightcoral: lightcoral;
 $lightseagreen: lightseagreen;
 
-@mixin buttonDesign($border, $color) {
-    border: 3px solid $border;
-    color: $color;
+@mixin buttonDesign($borderColor, $textColor) {
+    border: 3px solid $borderColor;
+    color: $textColor;
 }
