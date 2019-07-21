@@ -1,4 +1,4 @@
-![Simple-Editor screenshot](github/simpleEditor.png)
+![Simple-Editor screenshot](github/simpleEditor.PNG)
 
 # My simple editor
 
@@ -12,11 +12,12 @@ Come on, see live: [Live here](https://sasinskil.github.io/simple-editor)
 
 `gulp`
 
-To ***publish*** with the ghelp ofithub pages use `npm run deploy`
+To ***publish*** with the help of github pages use `npm run deploy`
 
 ### Technologies used
 
 - HTML/HTML5,
 - CSS/SCSS,
 - JavaScript,
-- Gulp
+- Gulp,
+- Figma -> [With extension](https://pdkit.co)
