@@ -1,6 +1,6 @@
 ![Simple-Editor screenshot](github/simpleEditor.PNG)
 
-# My simple editor
+# My simple editor to keep notes in localStorage
 
 Come on, see live: [Live here](https://sasinskil.github.io/simple-editor)
 
