@@ -26,7 +26,9 @@ const content = document.querySelector('.form__content--input-js');
 const btnSave = document.querySelector('.form__buttons--save-js');
 const btnLoad = document.querySelector('.form__buttons--load-js');
 
-btnSave.addEventListener('click', () => {
+btnSave.addEventListener('click', (e) => {
+
+  e.preventDefault();
 
   if (title.value.length > 0 && content.value.length > 0) {
     message.title = title.value;
@@ -42,7 +44,10 @@ btnSave.addEventListener('click', () => {
   }
 })
 
-btnLoad.addEventListener('click', () => {
+btnLoad.addEventListener('click', (e) => {
+
+  e.preventDefault();
+
   if (localStorage.getItem('message')) {
 
     const messageLocalStorage = localStorage.getItem('message')

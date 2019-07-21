@@ -17,14 +17,14 @@
 <body>
   <main class="simple-editor">
     <h1 class="simple-editor__header">Simple editor</h1>
-    <div class="form">
-      <p class="form__title">
+    <form class="form">
+      <p class="form__wrapper">
         <label class="form__title--label" for="title">Title:<br>
           <input class="form__title--input form__title--input-js" placeholder="Enter message title..." name="title"
             id="title" type="text">
         </label>
       </p>
-      <p class="form__content">
+      <p class="form__wrapper">
         <label class="form__content--label" for="content">Content:<br>
           <textarea class="form__content--input form__content--input-js" placeholder="Enter message content..."
             name="content" id="content"></textarea>
@@ -34,7 +34,7 @@
         <button class="form__buttons--save form__buttons--save-js">Save</button>
         <button class="form__buttons--load form__buttons--load-js">Load</button>
       </div>
-    </div>
+    </form>
   </main>
 
   <script src="js/main.js"></script>

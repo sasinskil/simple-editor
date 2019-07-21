@@ -48,6 +48,10 @@ body {
   max-width: 320px;
   z-index: 5;
 
+  &__wrapper {
+    padding-bottom: 10px;
+  }
+
   &__title {
     &--label {
       font-weight: bold;
@@ -63,8 +67,6 @@ body {
   }
 
   &__content {
-    padding-bottom: 20px;
-
     &--label {
       font-weight: bold;
     }
@@ -87,8 +89,7 @@ body {
       margin-right: 20px;
       background: #fff;
       @include buttonDesign($lightcoral, $lightcoral);
-      width: 90px;
-      height: 40px;
+      padding: 8px 25px;
       position: relative;
 
       &::before {
@@ -112,8 +113,7 @@ body {
     &--load {
       background: #fff;
       @include buttonDesign($lightseagreen, $lightseagreen);
-      width: 90px;
-      height: 40px;
+      padding: 8px 25px;
       position: relative;
 
       &::before {
