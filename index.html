@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SIMPLE EDITOR</title>
+  <meta name="description" content="Description" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <main class="simple-editor">
+    <h1 class="simple-editor__header">Simple editor</h1>
+    <div class="form">
+      <p class="form__title">
+        <label class="form__title--label" for="title">Title:<br>
+          <input class="form__title--input form__title--input-js" placeholder="Enter message title..." name="title"
+            id="title" type="text">
+        </label>
+      </p>
+      <p class="form__content">
+        <label class="form__content--label" for="content">Content:<br>
+          <textarea class="form__content--input form__content--input-js" placeholder="Enter message content..."
+            name="content" id="content"></textarea>
+        </label>
+      </p>
+      <div class="form__buttons">
+        <button class="form__buttons--save form__buttons--save-js">Save</button>
+        <button class="form__buttons--load form__buttons--load-js">Load</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
