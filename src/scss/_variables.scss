@@ -1,2 +1,8 @@
-$violet: #000;
-$yellow: #F9C802;
+$lightcyan: lightcyan;
+$lightcoral: lightcoral;
+$lightseagreen: lightseagreen;
+
+@mixin buttonDesign($borderColor, $textColor) {
+    border: 3px solid $borderColor;
+    color: $textColor;
+}
