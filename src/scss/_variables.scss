@@ -2,6 +2,8 @@ $lightcyan: lightcyan;
 $lightcoral: lightcoral;
 $lightseagreen: lightseagreen;
 
+$mobile: 640px;
+
 @mixin buttonDesign($borderColor, $textColor) {
     border: 3px solid $borderColor;
     color: $textColor;
