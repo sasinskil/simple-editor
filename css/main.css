@@ -466,11 +466,11 @@ body {
         -ms-flex-align: center;
             align-items: center; }
     .form__title--input {
-      border: 1px solid lightgray;
+      border: 1px solid lightcoral;
       background: lightcyan;
       width: 250px; }
     .form__content--input {
-      border: 1px solid lightgray;
+      border: 1px solid lightcoral;
       background: lightcyan;
       width: 250px; }
     .form__buttons {
