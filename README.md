@@ -17,7 +17,7 @@ To ***publish*** with the help of github pages use `npm run deploy`
 ### Technologies used
 
 - HTML/HTML5,
-- CSS/SCSS,
+- SASS,
 - JavaScript,
 - Gulp,
 - Figma -> [With extension](https://pdkit.co)
