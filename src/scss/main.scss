@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -13,8 +14,7 @@ html {
 }
 
 body {
-  background: $lightcyan;
-  color: $lightcoral;
+  background: $lightGray;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -23,59 +23,74 @@ body {
   align-items: center;
 }
 
-.simple-editor {
+.main-container {
   width: 100%;
-  max-width: 400px;
-  height: 500px;
-  background: #fff;
-  border: 4px solid lightgray;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  max-width: 800px;
+  padding: 0.7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 4px 4px 4px 4px lightgray;
 
   &__header {
-    padding-bottom: 20px;
-    font-size: 35px;
+    font-size: 2.3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 }
 
-.form {
+.simple-editor {
   width: 100%;
-  max-width: 300px;
-  z-index: 5;
+  margin-bottom: 8rem;
+  display: flex;
+  background-color: $white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.form {
+  padding: 0.6rem;
+  flex-basis: 50%;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+
+  &__header {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
   &__wrapper {
-    padding-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
   }
 
   &__title {
-    &--label {
-      font-weight: bold;
-    }
-
     &--input {
-      border: 2px solid lightgray;
-      padding: 10px;
-      margin-top: 10px;
-      background: none;
       width: 100%;
+      border: none;
+      margin-top: 0.3rem;
+      padding: 0.7rem 0.5rem;
+      font-size: 0.8rem;
+      background: $gray;
     }
   }
 
   &__content {
-    &--label {
-      font-weight: bold;
-    }
-
     &--input {
-      border: 2px solid lightgray;
-      padding: 10px;
-      margin-top: 10px;
       width: 100%;
-      height: 130px;
+      border: none;
+      margin-top: 0.3rem;
+      padding: 0.7rem 0.5rem;
+      font-size: 0.8rem;
+      height: 100px;
+      background: $gray;
     }
   }
 
@@ -83,94 +98,104 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-right: 5rem;
+  }
 
-    &--save {
-      margin-right: 20px;
-      background: #fff;
-      @include buttonDesign($lightcoral, $lightcoral);
-      padding: 8px 25px;
-      position: relative;
-      transition: background 0.6s, color 0.6s;
-
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        background: $lightcoral;
-        width: 100%;
-        height: 100%;
-        top: 7px;
-        left: 7px;
-        z-index: -1;
-      }
-
-      &:hover {
-        background: $lightcoral;
-        color: #fff;
-      }
+  &__button {
+    padding: 0.7rem 2.5rem;
+    border-radius: 20px;
+    border: 2px solid $orange;
+    background: $orange;
+    color: $white;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out,
+                background 0.3s ease-in-out,
+                border 0.3s ease-in-out;
+    & + &--load {
+      margin-left: 0.5rem;
+      background: $pink;
+      border: 2px solid $pink;
     }
 
-    &--load {
-      background: #fff;
-      @include buttonDesign($lightseagreen, $lightseagreen);
-      padding: 8px 25px;
-      position: relative;
-      transition: background 0.6s, color 0.6s;
+    &--save:hover {
+      color: $orange;
+      background: $white;;
+      border: 2px solid $orange;
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        background: $lightseagreen;
-        width: 100%;
-        height: 100%;
-        top: 7px;
-        left: 7px;
-        z-index: -1;
-      }
-
-      &:hover {
-        background: $lightseagreen;
-        color: #fff;
-      }
+    &--load:hover {
+      color: $pink;
+      background: $white;
+      border: 2px solid $pink;
     }
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .simple-editor {
-    border: none;
-    background: none;
-    box-shadow: none;
-    max-width: 350px;
+.hello {
+  padding: 0.6rem;
+  color: $white;
+  flex-basis: 50%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 
-    &__header {
-      font-size: 25px;
-    }
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0 2rem;
+  }
+
+  &__message {
+    font-size: 0.9rem;
+    padding: 2rem;
+    max-width: 300px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+
+  html {
+    font-size: 12px;
+  }
+
+  .main-container {
+    padding: 2rem;
+  }
+
+  .simple-editor {
+    flex-direction: column;
   }
 
   .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    &__title--input {
-      border: 1px solid lightcoral;
-      background: lightcyan;
-      width: 250px;
-    }
+    order: 2;
 
-    &__content--input {
-      border: 1px solid lightcoral;
-      background: lightcyan;
-      width: 250px;
+    &__wrapper {
+      max-width: 250px;
     }
 
     &__buttons {
-      margin-right: 70px;
+      justify-content: center;
+      margin-right: 0;
     }
+  }
+
+  .hello {
+    order: 1;
+    padding: 4rem 0;
   }
 }

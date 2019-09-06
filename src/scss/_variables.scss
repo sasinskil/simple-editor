@@ -1,10 +1,7 @@
-$lightcyan: lightcyan;
-$lightcoral: lightcoral;
-$lightseagreen: lightseagreen;
+$white:#fff;
+$lightGray:#f6f5f7;
+$gray: #eee;
+$orange: #ff4b2b;
+$pink: #eb335e;
 
 $mobile: 640px;
-
-@mixin buttonDesign($borderColor, $textColor) {
-    border: 3px solid $borderColor;
-    color: $textColor;
-}

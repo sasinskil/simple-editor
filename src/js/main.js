@@ -23,8 +23,8 @@ const message = {
 
 const title = document.querySelector('.form__title--input-js');
 const content = document.querySelector('.form__content--input-js');
-const btnSave = document.querySelector('.form__buttons--save-js');
-const btnLoad = document.querySelector('.form__buttons--load-js');
+const btnSave = document.querySelector('.form__button--save-js');
+const btnLoad = document.querySelector('.form__button--load-js');
 
 btnSave.addEventListener('click', (e) => {
 
