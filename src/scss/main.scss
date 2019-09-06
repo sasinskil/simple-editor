@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: #f6f5f7;
+  background: $lightGray;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -44,7 +44,7 @@ body {
   width: 100%;
   margin-bottom: 8rem;
   display: flex;
-  background-color: #fff;
+  background-color: $white;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: $white;
 
   &__header {
     font-weight: 700;
@@ -78,7 +78,7 @@ body {
       margin-top: 0.3rem;
       padding: 0.7rem 0.5rem;
       font-size: 0.8rem;
-      background: #eee;
+      background: $gray;
     }
   }
 
@@ -90,7 +90,7 @@ body {
       padding: 0.7rem 0.5rem;
       font-size: 0.8rem;
       height: 100px;
-      background: #eee;
+      background: $gray;
     }
   }
 
@@ -104,9 +104,9 @@ body {
   &__button {
     padding: 0.7rem 2.5rem;
     border-radius: 20px;
-    border: 2px solid #ff4b2b;
-    background: #ff4b2b;
-    color: #fff;
+    border: 2px solid $orange;
+    background: $orange;
+    color: $white;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -116,27 +116,27 @@ body {
                 border 0.3s ease-in-out;
     & + &--load {
       margin-left: 0.5rem;
-      background: #eb335e;
-      border: 2px solid #eb335e;
+      background: $pink;
+      border: 2px solid $pink;
     }
 
     &--save:hover {
-      color: #ff4b2b;
-      background: #fff;
-      border: 2px solid #ff4b2b;
+      color: $orange;
+      background: $white;;
+      border: 2px solid $orange;
     }
 
     &--load:hover {
-      color: #eb335e;
-      background: #fff;
-      border: 2px solid #eb335e;
+      color: $pink;
+      background: $white;
+      border: 2px solid $pink;
     }
   }
 }
 
 .hello {
   padding: 0.6rem;
-  color: #fff;
+  color: $white;
   flex-basis: 50%;
   order: 2;
   display: flex;
@@ -151,14 +151,15 @@ body {
   background-position: 0 0;
 
   &__title {
+    text-align: center;
     font-weight: 700;
     font-size: 2rem;
-    padding-bottom: 1rem;
+    padding: 0 2rem;
   }
 
   &__message {
     font-size: 0.9rem;
-    padding-bottom: 3rem;
+    padding: 2rem;
     max-width: 300px;
     text-align: center;
     letter-spacing: 0.5px;
@@ -172,12 +173,20 @@ body {
     font-size: 12px;
   }
 
+  .main-container {
+    padding: 2rem;
+  }
+
   .simple-editor {
     flex-direction: column;
   }
 
   .form {
     order: 2;
+
+    &__wrapper {
+      max-width: 250px;
+    }
 
     &__buttons {
       justify-content: center;
