@@ -1,4 +1,4 @@
-![Simple-Editor screenshot](github/simpleEditor.png)
+![Simple-Editor screenshot](github/screenshot.PNG)
 
 # My simple editor to keep notes in localStorage
 
