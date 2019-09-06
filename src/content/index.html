@@ -15,26 +15,33 @@
 </head>
 
 <body>
-  <main class="simple-editor">
-    <h1 class="simple-editor__header">Simple editor</h1>
-    <form class="form">
-      <p class="form__wrapper">
-        <label class="form__title--label" for="title">Title:<br>
-          <input class="form__title--input form__title--input-js" placeholder="Enter message title..." name="title"
-            id="title" type="text">
-        </label>
-      </p>
-      <p class="form__wrapper">
-        <label class="form__content--label" for="content">Content:<br>
-          <textarea class="form__content--input form__content--input-js" placeholder="Enter message content..."
-            name="content" id="content"></textarea>
-        </label>
-      </p>
-      <div class="form__buttons">
-        <button class="form__buttons--save form__buttons--save-js">Save</button>
-        <button class="form__buttons--load form__buttons--load-js">Load</button>
-      </div>
-    </form>
+  <main class="main-container">
+    <h1 class="main-container__header">Simple editor</h1>
+    <div class="simple-editor">
+      <form class="form">
+        <h2 class="form__header">Test test</h2>
+        <p class="form__wrapper">
+          <label class="form__title--label" for="title">Title:<br>
+            <input class="form__title--input form__title--input-js" placeholder="Enter message title..." name="title"
+              id="title" type="text">
+          </label>
+        </p>
+        <p class="form__wrapper">
+          <label class="form__content--label" for="content">Content:<br>
+            <textarea class="form__content--input form__content--input-js" placeholder="Enter message content..."
+              name="content" id="content"></textarea>
+          </label>
+        </p>
+        <div class="form__buttons">
+          <button class="form__buttons--save form__buttons--save-js">Save</button>
+          <button class="form__buttons--load form__buttons--load-js">Load</button>
+        </div>
+      </form>
+      <section class="hello">
+        <h2 class="hello__title">Hello, Friend!</h2>
+        <span class="hello__message">Enter your note and save that, enyoj this smart application</span>
+      </section>
+    </div>
   </main>
 
   <script src="js/main.js"></script>
